@@ -1,0 +1,43 @@
+.lang {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.lang__link {
+  font-size: 14px;
+  line-height: 17px;
+  color: #3C3D3E;
+}
+
+.lang__item {
+  margin-right: 27px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--current {
+    .lang__link {
+      position: relative;
+
+      color: #4047CD;
+      
+      &::after {
+        content: '';
+
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+
+        width: 100%;
+        height: 1px;
+
+        background-color: #4047CD;
+      }
+    }
+  }
+}

@@ -1,0 +1,244 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  list-style: none;
+
+  li {
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+  }
+
+  a {
+    padding: 20px 0;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  .menu-item-has-children {
+    position: relative;
+
+    padding-right: 18px;
+
+    a,
+    span {
+      position: relative;
+
+      display: flex;
+      align-items: center;
+      padding: 0;
+
+      &::before {
+        content: '';
+
+        position: absolute;
+        right: -17px;
+        top: 50%;
+
+        width: 10px;
+        height: 5px;
+        margin-top: -4px;
+
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        background-image: url("../img/dropdown.svg");
+
+        transition: all 0.2s ease;
+      }
+    }
+
+    &:hover {
+      a::before,
+      span::before {
+        transform: rotate(180deg);
+      }
+    }
+
+    &--open {
+      a::before,
+      span::before {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .sub-menu {
+    display: none;
+
+    position: absolute;
+    z-index: 90;
+    top: 100%;
+    left: -30px;
+
+    margin: 0;
+    padding: 18px 30px 13px;
+
+    list-style: none;
+    background-color: #ffffff;
+    border-radius: 6px;
+
+    span,
+    a {
+      display: block;
+      padding: 12px 0;
+
+      font-size: 14px;
+      line-height: 23px;
+      color: #3C3D3E;
+      white-space: nowrap;
+      text-transform: none;
+      letter-spacing: -0.015em;
+
+      border-bottom: 1px solid #EEF3F9;
+
+      &:hover,
+      &:focus {
+        color: #4047CD;
+      }
+    }
+
+    li {
+      &:last-child {
+        a {
+          border-bottom: none;
+        }
+      }
+    }
+
+    &::before {
+      content: '';
+
+      position: absolute;
+      left: 45px;
+      top: -9px;
+
+      width: 66px;
+      height: 11px;
+
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("../img/polygon.svg");
+    }
+
+    .sub-menu {
+      z-index: 100;
+      right: -270px;
+      left: unset;
+      top: -10px;
+
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+
+      &::before {
+        z-index: 900;
+        top: 40px;
+        left: -37px;
+
+        transform: rotate(-90deg);
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .menu {
+    .menu-item-has-children:hover .sub-menu {
+      display: block;
+
+      .sub-menu {
+        display: none;
+      }
+
+      .menu-item-has-children:hover .sub-menu {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+
+    background: #4047CD;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+
+    li {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .menu-item-has-children {
+      padding-right: 0;
+
+      a, span {
+        padding: 20px 0;
+      }
+    }
+
+    .sub-menu {
+      position: relative;
+      top: unset;
+      left: unset;
+
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 9px 17px 13px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+
+      &::before {
+        left: 50%;
+        margin-left: -32px;
+      }
+
+      span,
+      a {
+        padding: 21px 0;
+
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 23px;
+        color: #3C3D3E;
+        white-space: normal;
+      }
+
+      .sub-menu {
+        right: unset;
+        left: unset;
+        top: unset;
+
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &::before {
+          left: 50%;
+          top: -10px;
+          margin-left: -32px;
+
+          transform: unset;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+.mobile-control__burger {
+  width: 65px;
+  height: 60px;
+
+  background: #4047CD;
+  border-radius: 6px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 39%;
+  background-image: url("../img/burger.svg");
+  outline: none;
+
+  &--open {
+    background-image: url("../img/close.svg");
+  }
+}
+
+.mobile-control__phone {
+  padding: 0;
+  width: 234px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+
+  outline: none;
+  fill: #ffffff;
+
+  svg {
+    margin-right: 10px;
+  }
+}
+
+.mobile-control__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 27px;
+}
+
+.mobile-control__lang {
+  display: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 9px;
+
+  list-style: none;
+
+  li {
+    margin-right: 60px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+  }
+}
+
+.mobile-control {
+  display: none;
+
+  transition: all 0.3s ease;
+
+  &--active {
+    background: #4047CD;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+
+    .mobile-control__lang {
+      display: flex;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .mobile-control {
+    display: block;
+  }
+}

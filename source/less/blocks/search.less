@@ -1,0 +1,37 @@
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search__field {
+  width: 68px;
+
+  font-size: 14px;
+  line-height: 23px;
+  color: #3C3D3E;
+
+  border: none;
+  outline: none;
+}
+
+.search__button {
+  margin-left: 21px;
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+  fill: #3C3D3E;
+
+  outline: none;
+  cursor: pointer;
+  transition: all 0.1s ease;
+
+  &:hover,
+  &:focus {
+    fill: #4047CD;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}

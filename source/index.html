@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="css/style.css">
+<!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+
+  <title>SFT</title>
+</head>
+<body class="home-page">
+
+  <header class="home-header">
+
+    <div class="container home-header__top">
+      <a class="home-header__logo" href="#">
+        <img class="home-header__logo-pic" src="img/logo.svg" width="294" height="61" alt="Логотип компании">
+      </a>
+
+      <div class="home-header__block home-header__callback home-header__email-callback">
+        <a class="home-header__button" href="mailto:sales@surfacefinishing.ru">
+          <svg width="19" height="11" viewBox="0 0 19 11" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.25895 0L10.7955 6.3423L18.332 0H3.25895ZM2.59098 0.566759V2.37499H0.398164C0.133925 2.37499 -0.00388318 2.61106 8.32697e-05 2.80681C0.00420712 3.01032 0.116008 3.23862 0.4319 3.23862H5.76888L2.59098 0.566759ZM19 0.566759L13.2582 5.3977L19 10.2286V0.566759ZM6.72022 4.04153C6.65804 4.07933 6.57743 4.10225 6.47733 4.10225H1.07962C0.829222 4.10225 0.641464 4.34769 0.647808 4.55431C0.654753 4.78059 0.853248 4.96589 1.07962 4.96589H4.75006C5.00046 4.96589 5.18822 5.21132 5.18188 5.41794C5.17493 5.64422 4.97644 5.82952 4.75006 5.82952H1.94326C1.69296 5.82952 1.50655 6.07325 1.51144 6.28158C1.5161 6.48036 1.71688 6.69315 1.94326 6.69315H2.59098H3.23871C3.489 6.69315 3.67541 6.93688 3.67052 7.14521C3.66586 7.344 3.46508 7.55678 3.23871 7.55678H2.59098V8.85223V10.2286L8.33279 5.3977L6.72022 4.04153ZM12.5902 5.95771L11.0721 7.23967C10.9184 7.36788 10.6726 7.36788 10.5189 7.23967L9.00075 5.96446L3.25895 10.7954H18.332L12.5902 5.95771Z" fill="#4047CD"/>
+          </svg>
+        </a>
+        <div class="home-header__column">
+          <a class="home-header__email" href="mailto:sales@surfacefinishing.ru">sales@surfacefinishing.ru</a>
+          <a class="home-header__email" href="mailto:yakov@surfacefinishing.ru">yakov@surfacefinishing.ru</a>
+        </div>
+      </div>
+
+      <div class="home-header__block home-header__callback">
+      <a class="home-header__button" href="tel:+79877914182">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.433532 5.09467C-0.410055 2.78399 0.0960974 1.26232 0.939685 0.473303C1.78327 -0.315711 2.06447 0.0224381 2.62686 0.473303C3.18925 0.980527 4.9889 2.72763 4.9889 2.72763C4.9889 2.72763 5.5513 3.12214 5.04514 3.79844C4.59523 4.53109 3.41421 5.03832 4.31403 6.10912C5.77625 7.85622 7.12599 9.26518 8.92565 10.6741C9.99419 11.5759 10.5003 10.4487 11.1752 9.94148C11.8501 9.43425 12.3 9.99783 12.3 9.99783C12.3 9.99783 14.0434 11.8013 14.4933 12.3649C14.9432 12.9285 15.3369 13.2666 14.5496 14.112C13.7622 14.901 12.1875 15.4082 9.88171 14.5628C7.01351 13.492 1.55832 8.0253 0.433532 5.09467ZM6.61984 2.44584C5.83249 2.44584 5.88873 1.31868 6.61984 1.31868C10.5003 1.26232 13.706 4.47473 13.706 8.41981C13.706 9.15246 12.5812 9.15246 12.5812 8.41981C12.5812 5.09467 9.88171 2.38948 6.61984 2.44584ZM7.57591 5.03832C6.8448 5.03832 6.8448 3.91115 7.57591 3.91115C9.48804 3.91115 11.0627 5.48918 11.0627 7.40536C11.0627 8.13801 9.93795 8.13801 9.93795 7.40536C9.93795 6.10912 8.86941 5.03832 7.57591 5.03832Z" fill="#4047CD"/>
+        </svg>
+      </a>
+      <div class="home-header__column">
+        <a class="home-header__phone" href="tel:+79877914182">+7 987 791 41 82</a>
+      </div>
+    </div>
+
+      <div class="home-header__search search">
+        <input class="search__field" placeholder="Поиск">
+        <button class="search__button">
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.7559 10.4032C11.6686 10.316 11.565 10.2469 11.451 10.1997C11.337 10.1526 11.2148 10.1283 11.0914 10.1284C10.968 10.1285 10.8458 10.1529 10.7319 10.2002C10.6179 10.2476 10.5144 10.3169 10.4272 10.4042L10.4138 10.4177C10.3264 10.5047 10.257 10.6081 10.2096 10.7219C10.1622 10.8358 10.1378 10.9579 10.1377 11.0812C10.1376 11.2046 10.1619 11.3267 10.2091 11.4406C10.2563 11.5546 10.3255 11.6581 10.4128 11.7452L12.6252 13.9555C12.7999 14.1299 13.0355 14.2295 13.2823 14.2333C13.5291 14.237 13.7676 14.1447 13.9475 13.9757C14.0388 13.8841 14.1111 13.7754 14.1601 13.6558C14.2092 13.5362 14.2341 13.408 14.2334 13.2788C14.2327 13.1495 14.2063 13.0216 14.156 12.9025C14.1056 12.7835 14.0321 12.6756 13.9398 12.5851L11.7559 10.4032Z" fill="inherit"/>
+            <path d="M5.77784 11.5451C6.91932 11.5441 8.03486 11.2046 8.98345 10.5697C9.93205 9.93475 10.6711 9.03283 11.1072 7.97794C11.5433 6.92306 11.6569 5.76256 11.4335 4.64314C11.2102 3.52373 10.66 2.49565 9.85249 1.68887C9.04497 0.882098 8.01639 0.332841 6.89677 0.110534C5.77715 -0.111773 4.61676 0.0028517 3.56227 0.439917C2.50778 0.876983 1.60655 1.61687 0.972484 2.56604C0.338422 3.51522 4.7934e-07 4.63107 0 5.77255C0.00244097 7.30369 0.612128 8.77134 1.69531 9.85353C2.77848 10.9357 4.2467 11.5441 5.77784 11.5451V11.5451ZM5.77784 1.89782C6.54404 1.89853 7.29283 2.12637 7.92955 2.55256C8.56628 2.97875 9.06236 3.58414 9.35509 4.29221C9.64781 5.00029 9.72404 5.77926 9.57413 6.53064C9.42422 7.28203 9.05491 7.97211 8.51288 8.51365C7.97085 9.05518 7.28043 9.42386 6.52891 9.57308C5.77738 9.7223 4.99848 9.64536 4.29068 9.35199C3.58287 9.05861 2.97793 8.56198 2.55233 7.92486C2.12672 7.28774 1.89956 6.53875 1.89956 5.77255C1.90119 4.74479 2.31042 3.75965 3.03749 3.03324C3.76456 2.30684 4.75008 1.89851 5.77784 1.89782V1.89782Z" fill="inherit"/>
+          </svg>
+          <span class="visually-hidden">Поиск</span>
+        </button>
+      </div>
+
+      <ul class="home-header__lang lang">
+        <li class="lang__item">
+          <a class="lang__link" href="#">EN</a>
+        </li>
+        <li class="lang__item lang__item--current">
+          <a class="lang__link" href="#">RU</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="home-header__menu">
+
+      <div class="container">
+        <div class="mobile-control">
+          <div class="mobile-control__top">
+            <button class="mobile-control__burger">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <a class="mobile-control__phone home-button home-button--fill" href="tel:+79877914182">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.433532 5.09467C-0.410055 2.78399 0.0960974 1.26232 0.939685 0.473303C1.78327 -0.315711 2.06447 0.0224381 2.62686 0.473303C3.18925 0.980527 4.9889 2.72763 4.9889 2.72763C4.9889 2.72763 5.5513 3.12214 5.04514 3.79844C4.59523 4.53109 3.41421 5.03832 4.31403 6.10912C5.77625 7.85622 7.12599 9.26518 8.92565 10.6741C9.99419 11.5759 10.5003 10.4487 11.1752 9.94148C11.8501 9.43425 12.3 9.99783 12.3 9.99783C12.3 9.99783 14.0434 11.8013 14.4933 12.3649C14.9432 12.9285 15.3369 13.2666 14.5496 14.112C13.7622 14.901 12.1875 15.4082 9.88171 14.5628C7.01351 13.492 1.55832 8.0253 0.433532 5.09467ZM6.61984 2.44584C5.83249 2.44584 5.88873 1.31868 6.61984 1.31868C10.5003 1.26232 13.706 4.47473 13.706 8.41981C13.706 9.15246 12.5812 9.15246 12.5812 8.41981C12.5812 5.09467 9.88171 2.38948 6.61984 2.44584ZM7.57591 5.03832C6.8448 5.03832 6.8448 3.91115 7.57591 3.91115C9.48804 3.91115 11.0627 5.48918 11.0627 7.40536C11.0627 8.13801 9.93795 8.13801 9.93795 7.40536C9.93795 6.10912 8.86941 5.03832 7.57591 5.03832Z" fill="inherit"/>
+              </svg>
+              +7 987 791 41 82
+            </a>
+          </div>
+          <ul class="mobile-control__lang">
+            <li>
+              <a href="#">EU</a>
+            </li>
+            <li>
+              <a href="#">RU</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="menu">
+          <li>
+            <a href="#">О компании</a>
+          </li>
+          <li class="menu-item-has-children">
+            <a>Продукция</a>
+            <ul class="sub-menu">
+              <li>
+                <a href="#">Оборудование для финишной обработки поверхностей</a>
+              </li>
+              <li>
+                <a href="#">Оборудование, принцип действия которого основан на использовании магнитный свойств</a>
+              </li>
+              <li class="menu-item-has-children">
+                <a>Оборудование для очистки сварных швов на нержавеющей стали</a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#">Комплекты оборудования</a>
+                  </li>
+                  <li>
+                    <a href="#">Расходные материалы и принадлежности</a>
+                  </li>
+                  <li>
+                    <a href="#">Оборудование для очистки</a>
+                  </li>
+                  <li>
+                    <a href="#">Расходные материалы</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Фильтры для фильтрации аллюминевого расплава</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Каталоги</a>
+          </li>
+          <li>
+            <a href="#">Партнёрам</a>
+          </li>
+          <li>
+            <a href="#">Бланк заказа</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </header>
+
+  <section class="usp">
+
+    <div class="container usp__container">
+
+      <button class="usp__slider-arrow usp__slider-arrow--prev slider__arrow">
+        <span class="visually-hidden">Предыдущая картинка</span>
+        <svg width="10" height="20" viewBox="0 0 15 36" fill="inherit" stroke="inherit" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 35L1 18L14 1" stroke="inherit" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <h1 class="usp__title">
+        Продукция известных мировых фирм
+      </h1>
+      <p class="usp__offer">
+        «BRUSH RESEARCH MANUFACTURING CO.,INC»,<br class="usp__offer-br">«BRAILLON MAGNETIKS», «CAR s.r.l.», «CARIF s.r.l.», «GAMOR»
+      </p>
+      <div class="usp__control">
+        <button class="usp__button home-button home-button--fill">Оставить заявку</button>
+        <button class="home-button home-button--stroke">О продукции</button>
+      </div>
+
+      <button class="usp__slider-arrow usp__slider-arrow--next slider__arrow">
+        <span class="visually-hidden">Предыдущая картинка</span>
+        <svg width="10" height="20" viewBox="0 0 15 36" fill="inherit" stroke="inherit" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 35L1 18L14 1" stroke="inherit" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+    </div>
+
+    <div class="usp__slider">
+      <img class="usp__slider-pic usp__slider-pic--current" src="img/usp.jpg" width="1920" height="660">
+      <img class="usp__slider-pic" src="img/test.jpg" width="1920" height="660">
+    </div>
+  </section>
+
+  <section class="products container">
+    <div class="section-head">
+      <h2 class="section-head__name">Наши товары</h2>
+      <a href="#" class="section-head__link">Перейти на страницу с товарами</a>
+    </div>
+    <p class="section-subhead products__subhead">
+      Наша продукция особенно востребована в машиностроительной, приборостроительной, авиа- и ракетостроительной отраслях промышленности.
+    </p>
+
+    <ul class="products__list">
+      <li class="products__item">
+        <a class="products__link" href="#"></a>
+        <div class="products__pic-container">
+          <img class="products__pic" src="img/product-1.jpg" width="280" height="207" alt="Плита магнитная с автоматической очисткой">
+          <div class="products__more home-button home-button--fill" href="#">Подробнее</div>
+        </div>
+        <h3 class="products__name">
+          Плита магнитная с автоматической очисткой
+        </h3>
+        <p class="products__desc">
+          Подвесные магнитные плиты используются там, где нет возможности установить барабанный сепаратор.
+        </p>
+      </li>
+      <li class="products__item">
+        <a class="products__link" href="#"></a>
+        <div class="products__pic-container">
+          <img class="products__pic" src="img/product-2.jpg" width="280" height="207" alt="Барабан магнитный (БМ)">
+          <div class="products__more home-button home-button--fill" href="#">Подробнее</div>
+        </div>
+        <h3 class="products__name">
+          Барабан магнитный (БМ)
+        </h3>
+        <p class="products__desc">
+          Магнитный барабан на неодимовых магнитах позволит увеличить время...
+        </p>
+      </li>
+      <li class="products__item">
+        <a class="products__link" href="#"></a>
+        <div class="products__pic-container">
+          <img class="products__pic" src="img/product-4.jpg" width="280" height="207" alt="Сепаратор магнитный вихретоковый (СМВт)">
+          <div class="products__more home-button home-button--fill" href="#">Подробнее</div>
+        </div>
+        <h3 class="products__name">
+          Сепаратор магнитный вихретоковый (СМВт)
+        </h3>
+        <p class="products__desc">
+          Предназначен для выделения включений цветных металлов из токопроводящих, но немагнитных материалов.
+        </p>
+      </li>
+      <li class="products__item">
+        <a class="products__link" href="#"></a>
+        <div class="products__pic-container">
+          <img class="products__pic" src="img/product-3.jpg" width="280" height="207" alt="Сепаратор магнитный мокрый (СММ)">
+          <div class="products__more home-button home-button--fill" href="#">Подробнее</div>
+        </div>
+        <h3 class="products__name">
+          Сепаратор магнитный мокрый (СММ)
+        </h3>
+        <p class="products__desc">
+          Предназначен для очистки жидких материалов (пульпы) от ферромагнитных включений.
+        </p>
+      </li>
+
+      <li class="products__item">
+        <a class="products__link" href="#"></a>
+        <div class="products__pic-container">
+          <img class="products__pic" src="img/product-4.jpg" width="280" height="207" alt="Сепаратор магнитный вихретоковый (СМВт)">
+          <div class="products__more home-button home-button--fill" href="#">Подробнее</div>
+        </div>
+        <h3 class="products__name">
+          Сепаратор магнитный вихретоковый (СМВт)
+        </h3>
+        <p class="products__desc">
+          Предназначен для выделения включений цветных металлов из токопроводящих, но немагнитных материалов.
+        </p>
+      </li>
+      <li class="products__item">
+        <a class="products__link" href="#"></a>
+        <div class="products__pic-container">
+          <img class="products__pic" src="img/product-3.jpg" width="280" height="207" alt="Сепаратор магнитный мокрый (СММ)">
+          <div class="products__more home-button home-button--fill" href="#">Подробнее</div>
+        </div>
+        <h3 class="products__name">
+          Сепаратор магнитный мокрый (СММ)
+        </h3>
+        <p class="products__desc">
+          Предназначен для очистки жидких материалов (пульпы) от ферромагнитных включений.
+        </p>
+      </li>
+      <li class="products__item">
+        <a class="products__link" href="#"></a>
+        <div class="products__pic-container">
+          <img class="products__pic" src="img/product-1.jpg" width="280" height="207" alt="Плита магнитная с автоматической очисткой">
+          <div class="products__more home-button home-button--fill" href="#">Подробнее</div>
+        </div>
+        <h3 class="products__name">
+          Плита магнитная с автоматической очисткой
+        </h3>
+        <p class="products__desc">
+          Подвесные магнитные плиты используются там, где нет возможности установить барабанный сепаратор.
+        </p>
+      </li>
+      <li class="products__item">
+        <a class="products__link" href="#"></a>
+        <div class="products__pic-container">
+          <img class="products__pic" src="img/product-2.jpg" width="280" height="207" alt="Барабан магнитный (БМ)">
+          <div class="products__more home-button home-button--fill" href="#">Подробнее</div>
+        </div>
+        <h3 class="products__name">
+          Барабан магнитный (БМ)
+        </h3>
+        <p class="products__desc">
+          Магнитный барабан на неодимовых магнитах позволит увеличить время...
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="about container">
+    <div class="section-head about__head">
+      <h2 class="section-head__name">О нашей компании</h2>
+      <a href="#" class="section-head__link">Перейти на страницу о нас</a>
+    </div>
+
+    <div class="about__main">
+      <div class="about__left">
+        <p class="about__text about__text--bold">
+          Продукция, поставляемая нашей фирмой на российский рынок и рынки стран СНГ, представлена продуктами известных мировых фирм:
+        </p>
+        <p class="about__text">
+          Ведущей американской фирмы в области финишной обработки «BRUSH RESEARCH MANUFACTURING CO.,INC», которой была разработана и запатентована абсолютно новая технология в области абразивного инструмента.<br>
+          Патент США № 3 384 915 и ФРГ № Р 25 18 246.1 . На основе этих патентов было создано приспособление «FLEX-HONE»®, которым сегодня пользуются все ведущие в области машиностроения фирмы как в самих США, так и в Канаде, Европе и Азии.
+        </p>
+      </div>
+      <img class="about__right" src="img/about-pic.png" width="300" height="300" alt="О нас">
+    </div>
+
+    <ul class="about__list">
+      <li class="about__item">
+        <div class="about__icon-container">
+          <img class="about__icon" src="img/about-1.svg" width="70" height="69" alt="Прямые поставки">
+        </div>
+        <h3 class="about__name">Прямые поставки</h3>
+        <p class="about__desc">
+          Работаем напрямую<br>с ведущими производителями
+        </p>
+      </li>
+      <li class="about__item">
+        <div class="about__icon-container">
+          <img class="about__icon" src="img/about-2.svg" width="69" height="69" alt="Надёжные комплектующие">
+        </div>
+        <h3 class="about__name">Надёжные комплектующие</h3>
+        <p class="about__desc">
+          Работаем напрямую<br>с ведущими производителями
+        </p>
+      </li>
+      <li class="about__item">
+        <div class="about__icon-container">
+          <img class="about__icon" src="img/about-3.svg" width="73" height="72" alt="Гарантия качества">
+        </div>
+        <h3 class="about__name">Гарантия качества</h3>
+        <p class="about__desc">
+          Высочайшее качество<br>европейских производителей
+        </p>
+      </li>
+      <li class="about__item">
+        <div class="about__icon-container">
+          <img class="about__icon" src="img/about-4.svg" width="70" height="69" alt="Инженерная поддержка">
+        </div>
+        <h3 class="about__name">Инженерная поддержка</h3>
+        <p class="about__desc">
+          Получите мгновенный доступ<br>к нашей команде инженеров.
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="container make">
+
+    <div class="section-head make__head">
+      <h2 class="section-head__name">Продукция</h2>
+      <a href="#" class="section-head__link">Перейти на страницу продукции</a>
+    </div>
+    <p class="section-subhead make__subhead">
+      Наша продукция особенно востребована в машиностроительной, приборостроительной, авиа- и ракетостроительной отраслях промышленности.
+    </p>
+
+    <div class="make__slider">
+
+      <div class="make__wrapper">
+        <div class="make__item">
+          <a class="make__link" href="#"></a>
+          <div class="make__pic-container">
+            <img class="make__pic" src="img/make-1.jpg" width="280" height="170" alt="Промышленные магниты и приспособления">
+            <div class="make__more home-button home-button--fill" href="#">Подробнее</div>
+          </div>
+          <h3 class="make__name">
+            Промышленные магниты и приспособления
+          </h3>
+          <p class="make__desc">
+            Промышленные магниты и магнитные приспособления различного назначения. Щётки из сверхпрочного абразивного нейлона NamPower
+          </p>
+        </div>
+      </div>
+
+      <div class="make__wrapper">
+        <div class="make__item">
+          <a class="make__link" href="#"></a>
+          <div class="make__pic-container">
+            <img class="make__pic" src="img/make-2.jpg" width="280" height="170" alt="Дисковые абразивные щётки">
+            <div class="make__more home-button home-button--fill" href="#">Подробнее</div>
+          </div>
+          <h3 class="make__name">
+            Дисковые абразивные щётки
+          </h3>
+          <p class="make__desc">
+            Промышленные магниты и магнитные приспособления различного назначения. Щётки из сверхпрочного абразивного нейлона NamPower
+          </p>
+        </div>
+      </div>
+
+      <div class="make__wrapper">
+        <div class="make__item">
+          <a class="make__link" href="#"></a>
+          <div class="make__pic-container">
+            <img class="make__pic" src="img/make-3.jpg" width="280" height="170" alt="Промышленные магниты и приспособления">
+            <div class="make__more home-button home-button--fill" href="#">Подробнее</div>
+          </div>
+          <h3 class="make__name">
+            Промышленные магниты и приспособления
+          </h3>
+          <p class="make__desc">
+            Промышленные магниты и магнитные приспособления различного назначения. Щётки из сверхпрочного абразивного нейлона NamPower
+          </p>
+        </div>
+      </div>
+
+      <div class="make__wrapper">
+        <div class="make__item">
+          <a class="make__link" href="#"></a>
+          <div class="make__pic-container">
+            <img class="make__pic" src="img/make-4.jpg" width="280" height="170" alt="Щётки для уборки поверхностей">
+            <div class="make__more home-button home-button--fill" href="#">Подробнее</div>
+          </div>
+          <h3 class="make__name">
+            Щётки для уборки поверхностей
+          </h3>
+          <p class="make__desc">
+            Промышленные магниты и магнитные приспособления различного назначения. Щётки из сверхпрочного абразивного нейлона NamPower
+          </p>
+        </div>
+      </div>
+
+      <div class="make__wrapper">
+        <div class="make__item">
+          <a class="make__link" href="#"></a>
+          <div class="make__pic-container">
+            <img class="make__pic" src="img/make-1.jpg" width="280" height="170" alt="Промышленные магниты и приспособления">
+            <div class="make__more home-button home-button--fill" href="#">Подробнее</div>
+          </div>
+          <h3 class="make__name">
+            Промышленные магниты и приспособления
+          </h3>
+          <p class="make__desc">
+            Промышленные магниты и магнитные приспособления различного назначения. Щётки из сверхпрочного абразивного нейлона NamPower
+          </p>
+        </div>
+      </div>
+
+      <div class="make__wrapper">
+        <div class="make__item">
+          <a class="make__link" href="#"></a>
+          <div class="make__pic-container">
+            <img class="make__pic" src="img/make-2.jpg" width="280" height="170" alt="Дисковые абразивные щётки">
+            <div class="make__more home-button home-button--fill" href="#">Подробнее</div>
+          </div>
+          <h3 class="make__name">
+            Дисковые абразивные щётки
+          </h3>
+          <p class="make__desc">
+            Промышленные магниты и магнитные приспособления различного назначения. Щётки из сверхпрочного абразивного нейлона NamPower
+          </p>
+        </div>
+      </div>
+
+      <div class="make__wrapper">
+        <div class="make__item">
+          <a class="make__link" href="#"></a>
+          <div class="make__pic-container">
+            <img class="make__pic" src="img/make-3.jpg" width="280" height="170" alt="Промышленные магниты и приспособления">
+            <div class="make__more home-button home-button--fill" href="#">Подробнее</div>
+          </div>
+          <h3 class="make__name">
+            Промышленные магниты и приспособления
+          </h3>
+          <p class="make__desc">
+            Промышленные магниты и магнитные приспособления различного назначения. Щётки из сверхпрочного абразивного нейлона NamPower
+          </p>
+        </div>
+      </div>
+
+      <div class="make__wrapper">
+        <div class="make__item">
+          <a class="make__link" href="#"></a>
+          <div class="make__pic-container">
+            <img class="make__pic" src="img/make-4.jpg" width="280" height="170" alt="Щётки для уборки поверхностей">
+            <div class="make__more home-button home-button--fill" href="#">Подробнее</div>
+          </div>
+          <h3 class="make__name">
+            Щётки для уборки поверхностей
+          </h3>
+          <p class="make__desc">
+            Промышленные магниты и магнитные приспособления различного назначения. Щётки из сверхпрочного абразивного нейлона NamPower
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="partners container">
+
+    <div class="section-head partners__head">
+      <h2 class="section-head__name">Наши партнеры</h2>
+      <a href="#" class="section-head__link">Перейти на страницу продукции</a>
+    </div>
+    <p class="section-subhead partners__subhead">
+      Сфера нашей деятельности включает получение поверхностей высокого качества путём применения высокотехнологичного оборудования.
+    </p>
+
+    <div class="partners__slider">
+      <div class="partners__wrapper">
+        <img src="img/partner-1.jpg" width="281" height="170">
+      </div>
+      <div class="partners__wrapper">
+        <img src="img/partner-2.jpg" width="281" height="170">
+      </div>
+      <div class="partners__wrapper">
+        <img src="img/partner-3.jpg" width="281" height="170">
+      </div>
+      <div class="partners__wrapper">
+        <img src="img/partner-1.jpg" width="281" height="170">
+      </div>
+      <div class="partners__wrapper">
+        <img src="img/partner-2.jpg" width="281" height="170">
+      </div>
+      <div class="partners__wrapper">
+        <img src="img/partner-3.jpg" width="281" height="170">
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="home-footer">
+    <div class="home-footer__main container">
+      <div class="home-footer__column home-footer__column--details">
+        <h3 class="home-footer__column-name">
+          Реквизиты
+        </h3>
+        <p class="home-footer__text">
+          ООО«CЁРФЕЙС ФИНИШИНГ ТУЛС»<br>
+          ИНН 5610146730, КПП 561001001<br>
+          Код ОКПО  09068117
+        </p>
+        <p class="home-footer__text">
+          Юридический адрес: Россия, 460000,<br>
+          город Оренбург, ул. Ленинская 3/1, офис 14.<br>
+          Фактический Адрес: Россия, 460000,<br>
+          город Оренбург, ул. Ленинская 3/1, офис 14.<br>
+          Рассчётный счёт № 40702810700050001087<br>
+          в Оренбургском филиале
+        </p>
+        <p class="home-footer__text">
+          ОАО   КБ «Агропромкредит»<br>
+          460024, г. Оренбург, ул. Аксакова 17<br>
+          БИК 045354817, К/С30101810300000000817<br>
+          в ГРКЦ г. Оренбурга
+        </p>
+      </div>
+      <div class="home-footer__column home-footer__column--menu">
+        <h3 class="home-footer__column-name">
+          Меню
+        </h3>
+        <ul class="home-footer__menu">
+          <li>
+            <a href="#">О компании</a>
+          </li>
+          <li>
+            <a href="#">Каталоги</a>
+          </li>
+          <li>
+            <a href="#">Партнёрам</a>
+          </li>
+          <li>
+            <a href="#">Бланк заказа</a>
+          </li>
+          <li>
+            <a href="#">Новости</a>
+          </li>
+          <li>
+            <a href="#">Партнеры</a>
+          </li>
+        </ul>
+      </div>
+      <div class="home-footer__column home-footer__column--menu">
+        <h3 class="home-footer__column-name">
+          Продукция
+        </h3>
+        <ul class="home-footer__menu">
+          <li>
+            <a href="#">О компании</a>
+          </li>
+          <li>
+            <a href="#">Каталоги</a>
+          </li>
+          <li>
+            <a href="#">Партнёрам</a>
+          </li>
+          <li>
+            <a href="#">Бланк заказа</a>
+          </li>
+          <li>
+            <a href="#">Новости</a>
+          </li>
+          <li>
+            <a href="#">Партнеры</a>
+          </li>
+        </ul>
+      </div>
+      <div class="home-footer__column home-footer__column--contacts">
+        <h3 class="home-footer__column-name">
+          Контакты
+        </h3>
+        <p class="home-footer__contact-label">E-mail:</p>
+        <a class="home-footer__email" href="mailto:sales@surfacefinishing.ru">sales@surfacefinishing.ru</a>
+        <a class="home-footer__email" href="mailto:yakov@surfacefinishing.ru">yakov@surfacefinishing.ru</a>
+        <p class="home-footer__contact-label">Телефоны:</p>
+        <p class="home-footer__phone">
+          в России <a class="home-footer__phone--href" href="tel:+79877914182">+7 987 791 41 82</a>
+        </p>
+        <button class="home-footer__callback home-button home-button--fill">Оставить заявку</button>
+      </div>
+    </div>
+    <div class="home-footer__bottom">
+      <div class="container home-footer__bottom-container">
+        <p class="home-footer__copyright">© 2020 website.by</p>
+        <a class="home-footer__copyright" href="#">Политика конфиденциальности</a>
+        <a class="home-footer__copyright" href="#">Разработка сайта</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

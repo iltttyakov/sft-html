@@ -1,0 +1,147 @@
+.home-header {
+  padding-top: 27px;
+  margin-bottom: -23px;
+
+  background-color: #ffffff;
+}
+
+.home-header__top {
+  margin-bottom: 26px;
+  display: flex;
+  align-items: center;
+}
+
+.home-header__block {
+  display: flex;
+  align-items: center;
+}
+
+.home-header__callback {
+  margin-right: 74px;
+}
+
+.home-header__lang {
+  margin-left: auto;
+}
+
+.home-header__logo {
+  margin-right: 75px;
+  flex-shrink: 0;
+}
+
+.home-header__button {
+  display: flex;
+  flex-shrink: 0;
+  margin-right: 21px;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  border: 1px solid rgba(64, 71, 205, 0.1);
+  fill: #4047CD;
+
+  cursor: pointer;
+  transition: all 0.1s ease;
+
+  &:hover,
+  &:focus {
+    border-color: #4047CD;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.home-header__email {
+  display: block;
+  margin-bottom: 7px;
+
+  font-size: 14px;
+  line-height: 23px;
+  color: #3C3D3E;
+
+  cursor: pointer;
+  transition: all 0.1s ease;
+  
+  &:hover,
+  &:focus {
+    color: #4047CD;
+    text-decoration: none;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.home-header__phone {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color: #4047CD;
+  white-space: nowrap;
+
+  cursor: pointer;
+  transition: all 0.1s ease;
+
+  &:hover,
+  &:focus {
+    opacity: 0.9;
+    text-decoration: none;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.home-header__menu {
+  position: relative;
+  z-index: 200;
+
+  margin: 0 auto;
+  max-width: 1400px;
+
+  background: #4047CD;
+  border-radius: 6px;
+}
+
+@media (max-width: 1240px) {
+  .home-header__email-callback,
+  .home-header__search {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .home-header {
+    padding-top: 20px;
+    margin-bottom: 19px;
+  }
+
+  .home-header__logo {
+    margin: 0 auto;
+  }
+
+  .home-header__top {
+    margin-bottom: 20px;
+  }
+
+  .home-header__lang,
+  .home-header__callback {
+    display: none;
+  }
+
+  .home-header__menu {
+    padding: 0;
+
+    background-color: transparent;
+  }
+}
